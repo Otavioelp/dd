@@ -1,0 +1,116 @@
+.header{
+    // border: solid 3px red;
+    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    
+}
+
+.logo{
+    //  border: solid 3px blue;
+    width: 18vw;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    img{width: 3vw;
+        padding-bottom:20px ;}
+        margin-left: 1%;
+}
+
+h1{color:white;
+font-size: 20px;
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+font-weight: weight;
+font-style: normal;
+}
+
+ul{ display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // border: solid 3px blue;
+    // border: solid 3px tomato;
+    width: 40vw;
+    height: 10vh;}
+
+   .link{
+    color: #fff;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+   }
+
+
+    
+    img { width: 100%;}
+
+
+   .BarradeBusca{ border: solid  #fff;
+    border-radius: 20px;
+    margin-right: 1%;
+    height: 5vh;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    input{
+        background-color: transparent;
+    border: none;
+    width: 60%;
+    height: 5vh;
+    outline: none;
+
+    &::placeholder{
+        color: #fff;
+        font-size: 15px;
+       
+    }
+   
+}
+ button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    
+    }
+}
+@media (max-width: 780px){
+    header{
+        // border: solid red;
+        flex-direction: column;
+        width: 90%;
+
+        
+
+        .logo{
+            //  border: solid yellow;
+            width: 60%;
+            height: 7vh;
+            justify-content: space-around;
+            align-items: center;
+
+            img{width: 9vw;
+            margin-top: 2%;}
+        }
+
+        nav{
+            // border: solid red;
+            width: 95%;
+        }
+
+        ul{
+            //  border: solid greenyellow;
+        width: 95%;
+        height: 5vh;}
+
+        .BarradeBusca{
+            display: none;
+        }
+    }
+}

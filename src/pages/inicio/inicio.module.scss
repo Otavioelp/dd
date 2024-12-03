@@ -1,0 +1,116 @@
+.logo{
+    // border: solid 3px red;
+    background-image: url('../../assets/Venha.png');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #005695;
+    
+
+    h2{ color: white;
+    // border: solid 3px red;
+height: 15vh;
+width: 20vw;
+margin-left: 150px;
+margin-bottom: 30px;}
+}
+
+
+.cards{
+    // border: solid 3px red;
+    height: 43vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0157944D;
+
+    img{width: 8vw;}
+    p{font-size: 18px;
+    text-align: center;
+    // border: solid green;
+    width: 15vw;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;}
+}
+
+.cardscontainer{
+    // border: solid 3px blue;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulocards{
+    // border: solid red;
+    height: 15vh;
+    display: flex;
+    align-items: flex-end;
+
+    .titulo{font-size: 40px;
+    color: #005695;
+    margin-left: 2%;    
+}
+}
+.cards:hover{
+    border: ridge 1px #005695;
+    transition: 0.9s;
+}
+
+
+@media (max-width: 780px){
+    .logo{
+        // border: solid yellow;
+        height: 50vh;
+        width: 100vw;
+        background-image: url(../../assets/Fundo.png);
+        
+    //    background-size: 105% 100%;
+    //    background-color: saturate($color: #000000, $amount: 0);
+        justify-content: center;
+        align-items: center;
+        h2{font-size: 30px;
+            margin: 0;
+            text-align: center;
+        // border: solid red;
+        height: 20vh;
+        width: 75%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;}
+
+    }
+    .cardscontainer{
+        // border: solid red;
+        height:65rem;
+        flex-direction: column;
+
+        .cards{
+            // border: solid red;
+            width: 70%;
+            height: 30vh;
+            p{
+                font-size: 18px;
+                // border: solid red;
+            width: 95%;}
+            img{
+                width: 15vw;
+            }
+        }
+    }
+    .titulocards{
+        // border: solid blue;
+        justify-content: center;
+        align-items: center;
+
+        .titulo{font-size: 35px;}
+    }
+}

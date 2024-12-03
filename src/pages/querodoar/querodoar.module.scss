@@ -1,0 +1,95 @@
+
+.main{
+    // border: solid red;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form{
+    height: 75vh;
+    width: 30%;
+    border: solid 2px #005695;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    img{width: 5vw;}
+
+    input{
+        width: 70%;
+        height: 5vh;
+        border-radius: 10px;
+        border: solid 2px #005695;
+
+        &::placeholder{
+           font-size: 15px;
+           padding-left: 15px;   
+        }
+    }
+
+    button{
+        height: 8vh;
+        width: 40%;
+        border-radius: 10px;
+        background-color: #005695;
+        color: #fff;
+        border: #005695;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;}
+}
+
+.titulo{
+    
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h3{ color: #005695;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+}
+.introducao{ 
+    // border: solid red;
+    height: 4vh;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400px weight;
+        font-style: normal;
+
+}
+@media (max-width: 780px){
+    .introducao{
+        // border: solid red;
+        height: 15vh;
+        width: 80%;
+        p{ font-size: 20px;
+            }
+    }
+
+    .main{
+        height: 45rem;
+    }
+    form{
+        height: 70%;
+        width: 90%;
+        img{width: 12vw;}
+        button{width: 50%;
+        font-size: 20px;}
+        input{border-radius: 50px;}
+    }
+}
